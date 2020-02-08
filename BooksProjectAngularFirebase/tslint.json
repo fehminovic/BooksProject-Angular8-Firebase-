@@ -1,0 +1,23 @@
+{
+  "extends": ["tslint:recommended","tslint-angular","tslint-config-prettier"],
+  "defaultSeverity":"error",
+  "rulesDirectory": [
+    "codelyzer"
+  ],
+  "rules": {
+    "prettier": true,
+    "one-variable-per-declaration": false,
+    "ordered-imports": false,
+    "max-classes-per-file": false,
+    "deprecation" : false,
+    "ban-types": false,
+    "no-console": false,
+    "jsdoc-format": false,
+    "interface-name": false,
+    "only-arrow-functions": false,
+    "prefer-for-of": false
+  },
+  "linterOptions":{
+    "exclude": ["**/node_modules/**","**/polyfills.ts","**/e2e/**"]
+  }
+}
